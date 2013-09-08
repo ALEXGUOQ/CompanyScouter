@@ -9,11 +9,15 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "CrunchBaseClient.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [CrunchBaseClient setAPIKey:@"s8weu5yhzgynjvhcnxhbeb58"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];

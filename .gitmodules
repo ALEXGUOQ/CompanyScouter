@@ -1,0 +1,6 @@
+[submodule "Vendor/CrunchBaseClient"]
+	path = Vendor/CrunchBaseClient
+	url = https://github.com/shu223/CrunchBase-API-Client-for-iOS
+[submodule "Vendor/KloutAPIClient"]
+	path = Vendor/KloutAPIClient
+	url = https://github.com/shu223/Klout-API-Client-for-iOS
