@@ -39,7 +39,6 @@
 		8A3A10B717DBFF3300FFB168 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A10A517DBFF3300FFB168 /* IIViewDeckController.m */; };
 		8A3A10B817DBFF3300FFB168 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A10A717DBFF3300FFB168 /* IIWrapController.m */; };
 		8A3A10BA17DBFF4400FFB168 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A10B917DBFF4400FFB168 /* QuartzCore.framework */; };
-		8A3A10BE17DBFF8100FFB168 /* ASDashboardClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A10BD17DBFF8100FFB168 /* ASDashboardClient.m */; };
 		8AAF1A9917DC1B36009670F5 /* CrunchBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAF1A9817DC1B36009670F5 /* CrunchBaseClient.m */; };
 		8AAF1B0917DC7550009670F5 /* KloutAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAF1B0817DC7550009670F5 /* KloutAPIClient.m */; };
 /* End PBXBuildFile section */
@@ -99,8 +98,6 @@
 		8A3A10A617DBFF3300FFB168 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
 		8A3A10A717DBFF3300FFB168 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 		8A3A10B917DBFF4400FFB168 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8A3A10BC17DBFF8100FFB168 /* ASDashboardClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDashboardClient.h; sourceTree = "<group>"; };
-		8A3A10BD17DBFF8100FFB168 /* ASDashboardClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDashboardClient.m; sourceTree = "<group>"; };
 		8AAF1A9717DC1B36009670F5 /* CrunchBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchBaseClient.h; sourceTree = "<group>"; };
 		8AAF1A9817DC1B36009670F5 /* CrunchBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchBaseClient.m; sourceTree = "<group>"; };
 		8AAF1B0717DC7550009670F5 /* KloutAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KloutAPIClient.h; sourceTree = "<group>"; };
@@ -174,7 +171,6 @@
 		8A3A106217DBFE1D00FFB168 /* CompanyScouter */ = {
 			isa = PBXGroup;
 			children = (
-				8A3A10BB17DBFF8100FFB168 /* ASDashboardClient */,
 				8A3A106B17DBFE1D00FFB168 /* AppDelegate.h */,
 				8A3A106C17DBFE1D00FFB168 /* AppDelegate.m */,
 				8A3A107417DBFE1D00FFB168 /* ViewController.h */,
@@ -290,15 +286,6 @@
 			path = ViewDeck;
 			sourceTree = "<group>";
 		};
-		8A3A10BB17DBFF8100FFB168 /* ASDashboardClient */ = {
-			isa = PBXGroup;
-			children = (
-				8A3A10BC17DBFF8100FFB168 /* ASDashboardClient.h */,
-				8A3A10BD17DBFF8100FFB168 /* ASDashboardClient.m */,
-			);
-			path = ASDashboardClient;
-			sourceTree = "<group>";
-		};
 		8AAF1A9617DC1B36009670F5 /* CrunchBaseClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,7 +394,6 @@
 				8A3A10B617DBFF3300FFB168 /* IISideController.m in Sources */,
 				8A3A10B717DBFF3300FFB168 /* IIViewDeckController.m in Sources */,
 				8A3A10B817DBFF3300FFB168 /* IIWrapController.m in Sources */,
-				8A3A10BE17DBFF8100FFB168 /* ASDashboardClient.m in Sources */,
 				8AAF1A9917DC1B36009670F5 /* CrunchBaseClient.m in Sources */,
 				8AAF1B0917DC7550009670F5 /* KloutAPIClient.m in Sources */,
 			);
@@ -460,7 +446,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -478,14 +464,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
