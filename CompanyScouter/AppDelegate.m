@@ -17,8 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [CrunchBaseClient setAPIKey:@"s8weu5yhzgynjvhcnxhbeb58"];
-    [KloutAPIClient setAPIKey:@"s9atgnte7bhegfwqf74n3jhw"];
+    [CrunchBaseClient setAPIKey:<#YOUR CRUNCHBASE API KEY#>];
+    [KloutAPIClient setAPIKey:<#YOUR KLOUT API KEY#>];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
