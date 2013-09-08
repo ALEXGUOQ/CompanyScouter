@@ -10,6 +10,7 @@
 
 #import "ViewController.h"
 #import "CrunchBaseClient.h"
+#import "KloutAPIClient.h"
 
 
 @implementation AppDelegate
@@ -17,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [CrunchBaseClient setAPIKey:@"s8weu5yhzgynjvhcnxhbeb58"];
+    [KloutAPIClient setAPIKey:@"s9atgnte7bhegfwqf74n3jhw"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

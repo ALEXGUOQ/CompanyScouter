@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A141EE417DC86350044546A /* scouter1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A141EE217DC86350044546A /* scouter1.jpg */; };
+		8A141EE517DC86350044546A /* scouter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A141EE317DC86350044546A /* scouter2.png */; };
+		8A141EE717DC98960044546A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A141EE617DC98960044546A /* CoreLocation.framework */; };
 		8A3A105D17DBFE1D00FFB168 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A105C17DBFE1D00FFB168 /* UIKit.framework */; };
 		8A3A105F17DBFE1D00FFB168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A105E17DBFE1D00FFB168 /* Foundation.framework */; };
 		8A3A106117DBFE1D00FFB168 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A106017DBFE1D00FFB168 /* CoreGraphics.framework */; };
@@ -38,10 +41,13 @@
 		8A3A10BA17DBFF4400FFB168 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3A10B917DBFF4400FFB168 /* QuartzCore.framework */; };
 		8A3A10BE17DBFF8100FFB168 /* ASDashboardClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A10BD17DBFF8100FFB168 /* ASDashboardClient.m */; };
 		8AAF1A9917DC1B36009670F5 /* CrunchBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAF1A9817DC1B36009670F5 /* CrunchBaseClient.m */; };
-		8AAF1A9D17DC2447009670F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAF1A9C17DC2447009670F5 /* CoreLocation.framework */; };
+		8AAF1B0917DC7550009670F5 /* KloutAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAF1B0817DC7550009670F5 /* KloutAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A141EE217DC86350044546A /* scouter1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scouter1.jpg; sourceTree = "<group>"; };
+		8A141EE317DC86350044546A /* scouter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scouter2.png; sourceTree = "<group>"; };
+		8A141EE617DC98960044546A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8A3A105917DBFE1D00FFB168 /* CompanyScouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompanyScouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A3A105C17DBFE1D00FFB168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A3A105E17DBFE1D00FFB168 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,7 +103,8 @@
 		8A3A10BD17DBFF8100FFB168 /* ASDashboardClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDashboardClient.m; sourceTree = "<group>"; };
 		8AAF1A9717DC1B36009670F5 /* CrunchBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrunchBaseClient.h; sourceTree = "<group>"; };
 		8AAF1A9817DC1B36009670F5 /* CrunchBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrunchBaseClient.m; sourceTree = "<group>"; };
-		8AAF1A9C17DC2447009670F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8AAF1B0717DC7550009670F5 /* KloutAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KloutAPIClient.h; sourceTree = "<group>"; };
+		8AAF1B0817DC7550009670F5 /* KloutAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KloutAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AAF1A9D17DC2447009670F5 /* CoreLocation.framework in Frameworks */,
+				8A141EE717DC98960044546A /* CoreLocation.framework in Frameworks */,
 				8A3A10BA17DBFF4400FFB168 /* QuartzCore.framework in Frameworks */,
 				8A3A105D17DBFE1D00FFB168 /* UIKit.framework in Frameworks */,
 				8A3A105F17DBFE1D00FFB168 /* Foundation.framework in Frameworks */,
@@ -116,10 +123,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A141EE017DC86350044546A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A141EE117DC86350044546A /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A141EE117DC86350044546A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8A141EE217DC86350044546A /* scouter1.jpg */,
+				8A141EE317DC86350044546A /* scouter2.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		8A3A105017DBFE1D00FFB168 = {
 			isa = PBXGroup;
 			children = (
-				8AAF1A9C17DC2447009670F5 /* CoreLocation.framework */,
+				8A141EE017DC86350044546A /* Resources */,
 				8A3A107F17DBFF3300FFB168 /* Vendor */,
 				8A3A106217DBFE1D00FFB168 /* CompanyScouter */,
 				8A3A105B17DBFE1D00FFB168 /* Frameworks */,
@@ -138,6 +162,7 @@
 		8A3A105B17DBFE1D00FFB168 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A141EE617DC98960044546A /* CoreLocation.framework */,
 				8A3A10B917DBFF4400FFB168 /* QuartzCore.framework */,
 				8A3A105C17DBFE1D00FFB168 /* UIKit.framework */,
 				8A3A105E17DBFE1D00FFB168 /* Foundation.framework */,
@@ -177,6 +202,7 @@
 		8A3A107F17DBFF3300FFB168 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8AAF1B0617DC7550009670F5 /* KloutAPIClient */,
 				8AAF1A9617DC1B36009670F5 /* CrunchBaseClient */,
 				8A3A108017DBFF3300FFB168 /* ADVFlatUI */,
 				8A3A108317DBFF3300FFB168 /* AFNetworking */,
@@ -283,6 +309,16 @@
 			path = CrunchBaseClient/CrunchBaseClient;
 			sourceTree = "<group>";
 		};
+		8AAF1B0617DC7550009670F5 /* KloutAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				8AAF1B0717DC7550009670F5 /* KloutAPIClient.h */,
+				8AAF1B0817DC7550009670F5 /* KloutAPIClient.m */,
+			);
+			name = KloutAPIClient;
+			path = KloutAPIClient/KloutAPIClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,6 +376,8 @@
 				8A3A107317DBFE1D00FFB168 /* Default-568h@2x.png in Resources */,
 				8A3A107917DBFE1D00FFB168 /* ViewController.xib in Resources */,
 				8A3A10B317DBFF3300FFB168 /* SVProgressHUD.bundle in Resources */,
+				8A141EE417DC86350044546A /* scouter1.jpg in Resources */,
+				8A141EE517DC86350044546A /* scouter2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +409,7 @@
 				8A3A10B817DBFF3300FFB168 /* IIWrapController.m in Sources */,
 				8A3A10BE17DBFF8100FFB168 /* ASDashboardClient.m in Sources */,
 				8AAF1A9917DC1B36009670F5 /* CrunchBaseClient.m in Sources */,
+				8AAF1B0917DC7550009670F5 /* KloutAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
