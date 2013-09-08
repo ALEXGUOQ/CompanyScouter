@@ -1,7 +1,7 @@
 CompanyScouter
 ==============
 
-Calculate the company power level. Created on Disrupt SF Hackathon 2013.
+iOS app to calculate the company power level. Created on Disrupt SF Hackathon 2013.
 
 Presentation Slide:
 
